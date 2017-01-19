@@ -1,4 +1,3 @@
-/// <reference types="es6-promise" />
 import { IPayload } from 'react-native-webview-invoke/factory';
 declare var _default: (getWebview: () => any) => {
     bind: <T>(name: string) => (...args: any[]) => Promise<T>;
