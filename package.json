@@ -1,0 +1,38 @@
+{
+  "name": "react-native-webviewbridge-invoke",
+  "version": "0.0.1",
+  "description": "react-native-webview-invoke for react-native-webview-bridge",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinqy520/react-native-webviewbridge-invoke.git"
+  },
+  "keywords": [
+    "webviewbridge",
+    "webview",
+    "reactnative"
+  ],
+  "files": [
+    "native.js",
+    "native.d.ts",
+    "browser.js",
+    "browser.d.ts"
+  ],
+  "author": "Huang Qi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinqy520/react-native-webviewbridge-invoke/issues"
+  },
+  "homepage": "https://github.com/pinqy520/react-native-webviewbridge-invoke#readme",
+  "dependencies": {
+    "@types/es6-promise": "0.0.32",
+    "react-native-webview-invoke": "^0.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^2.1.5"
+  }
+}

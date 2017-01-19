@@ -1,0 +1,27 @@
+# OSX
+#
+.DS_Store
+
+
+# node.js
+#
+built
+node_modules
+.vscode/*
+!.vscode/settings.json
+*.log
+
+.svn
+/bundle/
+something.md
+
+# Yarn
+yarn.lock
+
+# vs
+.vs/
+*.njsproj
+*.sln
+
+# project
+tbnext.json
