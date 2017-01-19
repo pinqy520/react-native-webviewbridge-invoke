@@ -4,7 +4,7 @@
   "description": "react-native-webview-invoke for react-native-webview-bridge",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && babel browser.js --out-file browser.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -32,6 +32,8 @@
     "react-native-webview-invoke": "^0.3.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.8",
     "typescript": "^2.1.5"
   }
 }
