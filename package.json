@@ -29,10 +29,10 @@
   },
   "homepage": "https://github.com/pinqy520/react-native-webviewbridge-invoke#readme",
   "dependencies": {
-    "@types/es6-promise": "0.0.32",
     "react-native-webview-invoke": "^0.3.1"
   },
   "devDependencies": {
-    "typescript": "^2.1.5"
+    "typescript": "^2.1.5",
+    "@types/es6-promise": "0.0.32"
   }
 }
