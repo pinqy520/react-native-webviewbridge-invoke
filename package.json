@@ -1,6 +1,6 @@
 {
   "name": "react-native-webviewbridge-invoke",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "react-native-webview-invoke for react-native-webview-bridge",
   "main": "index.js",
   "scripts": {
