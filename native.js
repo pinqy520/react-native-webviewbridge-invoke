@@ -8,7 +8,7 @@ exports.default = (getWebview) => {
     });
     return {
         bind, define, fn,
-        listener: (e) => handler(JSON.parse(e.nativeEvent.data)),
+        listener: (msg) => handler(msg),
         addEventListener, removeEventListener, isConnect
     };
 };

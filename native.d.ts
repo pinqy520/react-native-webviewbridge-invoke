@@ -3,7 +3,7 @@ declare var _default: (getWebview: () => any) => {
     bind: <T>(name: string) => (...args: any[]) => Promise<T>;
     define: (name: string, callback: Function) => void;
     fn: any;
-    listener: (e: any) => any;
+    listener: (msg: any) => any;
     addEventListener: (name: string, callback: (params: IPayload<any>) => void) => void;
     removeEventListener: (name: string, callback: (params: IPayload<any>) => void) => void;
     isConnect: () => boolean;

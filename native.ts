@@ -1,4 +1,4 @@
-import createMessager, {IPayload}  from 'react-native-webview-invoke/factory'
+import createMessager, { IPayload } from 'react-native-webview-invoke/factory'
 
 export default (getWebview: () => any) => {
     const { bind, define, listener: handler, fn, addEventListener, removeEventListener, isConnect } = createMessager(
@@ -9,7 +9,7 @@ export default (getWebview: () => any) => {
     )
     return {
         bind, define, fn,
-        listener: (e: any) => handler(JSON.parse(e.nativeEvent.data)),
+        listener: (msg: any) => handler(msg),
         addEventListener, removeEventListener, isConnect
     }
 }
