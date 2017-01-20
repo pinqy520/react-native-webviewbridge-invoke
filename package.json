@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/pinqy520/react-native-webviewbridge-invoke#readme",
   "dependencies": {
-    "react-native-webview-invoke": "^0.3.2"
+    "react-native-webview-invoke": "^0.3.3"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
