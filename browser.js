@@ -19,11 +19,11 @@ if (window['WebViewBridge']) {
 } else {
     window.addEventListener('webviewbridge:init', function () {
         if (window['WebViewBridge']) {
+            window['WebViewBridge'].addMessageListener(listener);
             ready();
         }
     });
 }
-window['WebViewBridge'].addMessageListener(listener);
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
     bind: bind, define: define, fn: fn, addEventListener: addEventListener, removeEventListener: removeEventListener, isConnect: isConnect

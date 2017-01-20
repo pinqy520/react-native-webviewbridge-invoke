@@ -10,12 +10,11 @@ if ((window as any)['WebViewBridge']) {
 } else {
     window.addEventListener('webviewbridge:init', function () {
         if ((window as any)['WebViewBridge']) {
+            (window as any)['WebViewBridge'].addMessageListener(listener)
             ready()
         }
     })
 }
-
-(window as any)['WebViewBridge'].addMessageListener(listener)
 
 export default {
     bind, define, fn, addEventListener, removeEventListener, isConnect
