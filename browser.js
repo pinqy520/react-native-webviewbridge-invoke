@@ -1,24 +1,12 @@
 "use strict";
-
 var factory_1 = require("react-native-webview-invoke/factory");
 var isBrowser = typeof window !== 'undefined';
-
-var _factory_1$default = factory_1.default(function (data) {
-    isBrowser && window['WebViewBridge'].send(data);
-}),
-    bind = _factory_1$default.bind,
-    define = _factory_1$default.define,
-    listener = _factory_1$default.listener,
-    ready = _factory_1$default.ready,
-    fn = _factory_1$default.fn,
-    addEventListener = _factory_1$default.addEventListener,
-    removeEventListener = _factory_1$default.removeEventListener,
-    isConnect = _factory_1$default.isConnect;
-
+var _a = factory_1.default(function (data) { isBrowser && window['WebViewBridge'].send(data); }), bind = _a.bind, define = _a.define, listener = _a.listener, ready = _a.ready, fn = _a.fn, addEventListener = _a.addEventListener, removeEventListener = _a.removeEventListener, isConnect = _a.isConnect;
 if (isBrowser) {
     if (window['WebViewBridge']) {
         ready();
-    } else {
+    }
+    else {
         window.addEventListener('webviewbridge:init', function () {
             if (window['WebViewBridge']) {
                 window['WebViewBridge'].addMessageListener(listener);
