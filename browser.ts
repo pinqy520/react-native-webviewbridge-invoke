@@ -7,7 +7,7 @@ const { bind, define, listener, ready, fn, addEventListener, removeEventListener
 )
 
 if (isBrowser) {
-    if ((window as any)['WebViewBridge']) {
+    if ((window as any)['WebViewBridge'] && (window as any)['WebViewBridge'].addMessageListener) {
         ready()
     } else {
         window.addEventListener('webviewbridge:init', function () {
